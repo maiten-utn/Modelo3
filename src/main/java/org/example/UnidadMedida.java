@@ -1,15 +1,10 @@
-package org.model;
+package org.example;
 
 import lombok.*;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
-public class Imagen {
+public class UnidadMedida {
     private Long id;
     private String denominacion;
-
-
-
 }

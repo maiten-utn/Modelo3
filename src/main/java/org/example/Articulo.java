@@ -1,10 +1,10 @@
-package org.model;
+package org.example;
+
 import lombok.*;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
+@ToString
 public class Articulo {
     private Long id;
     private String denominacion;
@@ -12,9 +12,8 @@ public class Articulo {
     private Double precioCompra;
     private Integer stockActual;
     private Integer stockMaximo;
-    private Integer tiempoEstimadoEnMin;
+    private Integer tiempoEstimadoMinutos;
     private UnidadMedida unidadMedida;
-    @ToString.Exclude
     private Imagen imagen;
-
 }
+

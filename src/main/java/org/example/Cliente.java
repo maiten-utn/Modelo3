@@ -1,13 +1,9 @@
-package org.model;
+package org.example;
 import lombok.*;
-
 import java.time.LocalDate;
 import java.util.HashSet;
-import java.util.Set;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Builder
 public class Cliente {
     private Long id;
@@ -16,7 +12,5 @@ public class Cliente {
     private String telefono;
     private String email;
     private LocalDate fechaNacimiento;
-    @ToString.Exclude
-    @Builder.Default
-    private Set<Pedido> pedidos = new HashSet<>() ;
+    private HashSet<Pedido> hace;
 }
